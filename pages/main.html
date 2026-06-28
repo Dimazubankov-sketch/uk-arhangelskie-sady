@@ -1,0 +1,513 @@
+<!-- Главный экран (Hero) -->
+<section id="hero" class="relative min-h-[90vh] flex items-center justify-center bg-brand-800 overflow-hidden py-20">
+    <div class="absolute inset-0">
+        <!--  -->
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80" 
+             alt="Коттеджный посёлок у озера" 
+             class="w-full h-full object-cover opacity-35 scale-105"
+             onerror="this.src='https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1920&q=80'">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-800/90 via-brand-800/80 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6 text-white text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-xs sm:text-sm font-semibold tracking-wider text-brand-gold">
+                    <i class="fa-solid fa-shield-halved text-brand-gold"></i> Ваша безопасность и комфорт в надёжных руках
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-luxury leading-[1.1] tracking-tight text-white">
+                    Управляющая компания <br>
+                    <span class="text-brand-gold italic font-normal">«Архангельские Сады»</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-200 max-w-2xl leading-relaxed font-light">
+                    Профессиональное обслуживание, круглосуточная охрана, содержание дорожной инфраструктуры и комплексный уход за уникальной территорией вашего посёлка в Тульской области.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto lg:mx-0 pt-2">
+                    <div class="flex items-start gap-3 text-left">
+                        <span class="text-brand-gold bg-brand-700/80 p-2 rounded-lg mt-0.5"><i class="fa-solid fa-shield-check w-4 text-center"></i></span>
+                        <div>
+                            <h4 class="font-semibold text-sm">Охрана и КПП</h4>
+                            <p class="text-xs text-gray-300">Пропускной режим 24/7</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 text-left">
+                        <span class="text-brand-gold bg-brand-700/80 p-2 rounded-lg mt-0.5"><i class="fa-solid fa-road w-4 text-center"></i></span>
+                        <div>
+                            <h4 class="font-semibold text-sm">Дорожная служба</h4>
+                            <p class="text-xs text-gray-300">Собственный парк техники</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 text-left">
+                        <span class="text-brand-gold bg-brand-700/80 p-2 rounded-lg mt-0.5"><i class="fa-solid fa-seedling w-4 text-center"></i></span>
+                        <div>
+                            <h4 class="font-semibold text-sm">Благоустройство</h4>
+                            <p class="text-xs text-gray-300">Покос и борьба с сорняками</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 text-left">
+                        <span class="text-brand-gold bg-brand-700/80 p-2 rounded-lg mt-0.5"><i class="fa-solid fa-water w-4 text-center"></i></span>
+                        <div>
+                            <h4 class="font-semibold text-sm">Своя эко-зона</h4>
+                            <p class="text-xs text-gray-300">Чистый пруд и прогулочный лес</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#services" class="bg-brand-gold hover:bg-brand-goldDark text-brand-800 font-bold px-8 py-4 rounded-xl text-center shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Услуги управляющей компании
+                    </a>
+                    <a href="tel:+79101610146" class="border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl text-center transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Позвонить в УК
+                    </a>
+                </div>
+            </div>
+
+            <!-- Быстрая заявка -->
+            <div class="lg:col-span-5">
+                <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 text-gray-800 shadow-2xl border border-white/50 relative overflow-hidden">
+                    <h3 class="text-xl font-bold font-serif-luxury text-brand-700 mb-2">Оперативная связь с УК</h3>
+                    <p class="text-sm text-gray-500 mb-6">Возник вопрос, нужен временный пропуск или услуги покоса? Напишите нам.</p>
+                    
+                    <form id="hero-mini-form" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Ваше имя</label>
+                            <input type="text" required placeholder="Иван Иванов" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Номер телефона</label>
+                            <input type="tel" required placeholder="+7 (999) 999-99-99" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Что требуется?</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm bg-white">
+                                <option value="пропуск">Заказать пропуск для гостей/техники</option>
+                                <option value="благоустройство">Покос травы / Заказ трактора</option>
+                                <option value="дороги">Вопросы по дорогам / Снегу</option>
+                                <option value="консультация">Другой вопрос</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3.5 rounded-lg text-sm tracking-wide shadow-md hover:shadow-lg transition-all">
+                            <i class="fa-solid fa-paper-plane mr-2 text-xs"></i> Отправить запрос
+                        </button>
+                    </form>
+                    <div id="hero-mini-success" class="hidden text-center py-6">
+                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800">Заявка принята!</h4>
+                        <p class="text-sm text-gray-500 mt-1">Наш диспетчер свяжется с вами в ближайшее время.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- О посёлке -->
+<section id="about" class="py-20 sm:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] bg-brand-100">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Загородный коттедж" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <p class="text-brand-gold font-semibold text-sm uppercase tracking-wider mb-1">Архангельские сады</p>
+                        <h4 class="text-xl font-bold font-serif-luxury">Тульская область, Ленинский район</h4>
+                    </div>
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-brand-600 text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-[220px]">
+                    <span class="block text-3xl font-extrabold text-brand-gold font-serif-luxury">112 га</span>
+                    <span class="block text-xs font-medium text-gray-200 mt-1">Общая площадь земельных массивов</span>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-brand-gold font-extrabold uppercase tracking-widest text-sm block">Объединяя природу и комфорт</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-700 font-serif-luxury tracking-tight leading-snug">
+                    Жизнь в гармонии с природой в пригороде Тулы
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Покупка дома за городом — это настоящий путь к пониманию себя, к радости, спокойствию, уютной семейной жизни. Коттеджный поселок <strong class="text-brand-700">«Архангельские Сады»</strong> предоставит вам все возможности для комфортного проживания.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Архангельское — это красивейшая экологически чистая зона со смешанным и хвойным лесом, чистым воздухом, каскадами прудов и лугами. Поселок расположен в московском направлении, всего в <strong class="text-brand-700">1 км от северной границы г. Тулы</strong> и в 17 км от Тульского кремля. Это делает его идеальным выбором для постоянного проживания.
+                </p>
+
+                <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-bold text-brand-600 font-serif-luxury">26 га</span>
+                        <span class="block text-xs text-gray-500 mt-1">Площадь зеркала пруда</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-bold text-brand-600 font-serif-luxury">17 км</span>
+                        <span class="block text-xs text-gray-500 mt-1">До Тульского кремля</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-bold text-brand-600 font-serif-luxury">1 км</span>
+                        <span class="block text-xs text-gray-500 mt-1">От границы Тулы</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Наши услуги -->
+<section id="services" class="py-20 sm:py-24 bg-brand-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span class="text-brand-gold font-bold uppercase tracking-widest text-sm block">Служба эксплуатации</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-700 font-serif-luxury tracking-tight">
+                Что предоставляет наша Управляющая Компания
+            </h2>
+            <p class="text-gray-600 text-base sm:text-lg">
+                Мы берем на себя все повседневные и сезонные задачи, обеспечивая идеальный порядок на территории посёлка.
+            </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Охрана -->
+            <div class="service-card bg-white rounded-2xl p-8 border border-gray-100/80 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Охрана территории</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Круглосуточный контроль порядка, регулярное патрулирование жилых зон силами специалистов охраны.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-brand-gold font-semibold tracking-wider uppercase">
+                    <span>Режим 24/7</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- Пропускной режим -->
+            <div class="service-card bg-white rounded-2xl p-8 border border-gray-100/80 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Пропускной режим</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Оборудованный контрольно-пропускной пункт (КПП) на въезде. Доступ гостей и строительной техники исключительно по заявкам.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-brand-gold font-semibold tracking-wider uppercase">
+                    <span>Безопасный доступ</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- Покос травы -->
+            <div class="service-card bg-white rounded-2xl p-8 border border-gray-100/80 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Покос травы</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Регулярное скашивание травы на общественных территориях, спортивных и детских площадках, а также вдоль дорог.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-brand-gold font-semibold tracking-wider uppercase">
+                    <span>Уход за ландшафтом</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- Травля борщевика (ИСПРАВЛЕНО: Полностью корректный HTML тег) -->
+            <div class="service-card bg-white rounded-2xl p-8 border border-gray-100/80 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Борьба с борщевиком</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Профессиональная обработка очагов опасного сорняка химическими средствами для полной безопасности жителей.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-brand-gold font-semibold tracking-wider uppercase">
+                    <span>Защита территорий</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- Береговая зона -->
+            <div class="service-card bg-white rounded-2xl p-8 border border-gray-100/80 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Содержание береговой зоны</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Регулярная очистка берега пруда, благоустройство пляжной зоны и создание комфортных мест для летнего отдыха.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-brand-gold font-semibold tracking-wider uppercase">
+                    <span>Озеро и Пляж</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- Лесная зона -->
+            <div class="service-card bg-white rounded-2xl p-8 border border-gray-100/80 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Лесная зона и сады</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Уход за лесопарковой зоной, санитарная чистка и содержание вековых яблоневых садов вокруг посёлка.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-brand-gold font-semibold tracking-wider uppercase">
+                    <span>Экология и Лес</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Дорожная инфраструктура -->
+<section id="infrastructure" class="py-20 sm:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-brand-800 rounded-3xl overflow-hidden shadow-2xl relative">
+            
+            <div class="absolute inset-0 opacity-10">
+                <img src="https://images.unsplash.com/photo-1515162305285-0293e4767cc2?auto=format&fit=crop&w=1200&q=80" 
+                     alt="Дорожная техника" 
+                     class="w-full h-full object-cover">
+            </div>
+
+            <div class="relative z-10 p-8 sm:p-12 lg:p-16 grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-white">
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-sm block">Особая экспертиза управляющей компании</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-serif-luxury leading-tight">
+                        Безупречные дороги круглый год
+                    </h2>
+                    <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+                        Наш многолетний опыт в дорожном строительстве позволяет эффективно применять профессиональные знания и собственную специализированную дорожную технику непосредственно в «Архангельских Садах».
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4 text-sm">
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-brand-gold flex items-center justify-center"><i class="fa-solid fa-check text-xs"></i></span>
+                            <span>Оперативная расчистка снега зимой</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-brand-gold flex items-center justify-center"><i class="fa-solid fa-check text-xs"></i></span>
+                            <span>Регулярный покос обочин дорог</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-brand-gold flex items-center justify-center"><i class="fa-solid fa-check text-xs"></i></span>
+                            <span>Ремонт и заделка покрытий</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-brand-600 text-brand-gold flex items-center justify-center"><i class="fa-solid fa-check text-xs"></i></span>
+                            <span>Обустройство водостоков и дренажа</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-center text-white space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-brand-gold/20 flex items-center justify-center text-3xl text-brand-gold mx-auto">
+                        <i class="fa-solid fa-truck-monster"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif-luxury text-brand-gold">Собственный автопарк</h3>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        Мы осуществляем все виды работ силами собственной коммунальной спецтехники, гарантируя максимальную оперативность реагирования при снегопадах или дефектах полотна.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Фотогалерея -->
+<section class="py-20 bg-brand-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-brand-gold font-bold uppercase tracking-widest text-sm block">Природная красота</span>
+            <h2 class="text-3xl font-extrabold text-brand-700 font-serif-luxury">Наш прекрасный посёлок</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-white">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" 
+                     alt="Озеро" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h4 class="font-bold text-base">Чистейший пруд 26 га</h4>
+                    <p class="text-xs text-brand-gold">Рыбалка и пляж</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-white">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" 
+                     alt="Лес" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h4 class="font-bold text-base">Смешанные леса</h4>
+                    <p class="text-xs text-brand-gold">Прогулки и свежий воздух</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-white">
+                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" 
+                     alt="Сады" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h4 class="font-bold text-base">Яблоневые сады</h4>
+                    <p class="text-xs text-brand-gold">Природный микроклимат</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-white">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" 
+                     alt="Экозона" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h4 class="font-bold text-base">Чистая экология</h4>
+                    <p class="text-xs text-brand-gold">Вдали от городской суеты</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Контакты и Форма -->
+<section id="contacts" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-5 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-sm block">Контакты администрации</span>
+                    <h2 class="text-3xl font-extrabold text-brand-700 font-serif-luxury tracking-tight">
+                        Мы всегда на связи
+                    </h2>
+                    <p class="text-gray-600">
+                        Свяжитесь с нами по любым возникающим вопросам коммунального обслуживания или покупки участков.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-semibold">Директор Управляющей Компании</h4>
+                            <a href="tel:+79101610146" class="text-xl font-bold text-brand-700 hover:text-brand-600 transition-colors">
+                                8 (910) 161-01-46
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-semibold">Отдел продаж земельных участков</h4>
+                            <a href="tel:+79105882424" class="text-xl font-bold text-brand-700 hover:text-brand-600 transition-colors">
+                                8 (910) 588-24-24
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-semibold">Электронная почта</h4>
+                            <a href="mailto:arh_sad2026@mail.ru" class="text-base font-bold text-gray-700 hover:text-brand-600 transition-colors">
+                                arh_sad2026@mail.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Форма заявки -->
+            <div id="request-form" class="lg:col-span-7 bg-brand-50 rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm relative overflow-hidden">
+                <h3 class="text-2xl font-bold font-serif-luxury text-brand-700 mb-2">Оформить официальный запрос</h3>
+                <p class="text-sm text-gray-600 mb-8">
+                    Укажите ваши данные, и мы мгновенно зарегистрируем вашу заявку в базе Управляющей Компании.
+                </p>
+
+                <form id="main-contact-form" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Ваше Имя *</label>
+                            <input type="text" required placeholder="Введите ваше имя" class="w-full bg-white px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Телефон *</label>
+                            <input type="tel" required placeholder="+7 (999) 999-99-99" class="w-full bg-white px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Номер участка</label>
+                            <input type="text" placeholder="Например: 12" class="w-full bg-white px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Услуга</label>
+                            <select class="w-full bg-white px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm bg-white">
+                                <option value="покос">Заказ покоса / Борьба с борщевиком</option>
+                                <option value="пропуск">Оформление пропуска</option>
+                                <option value="дороги">Вопросы по дорогам</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Текст обращения</label>
+                        <textarea rows="4" placeholder="Опишите подробно суть обращения..." class="w-full bg-white px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all">
+                        Отправить обращение в УК
+                    </button>
+                </form>
+
+                <div id="main-form-success" class="hidden text-center py-12 space-y-4">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-2xl">
+                        <i class="fa-solid fa-check-double"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold font-serif-luxury text-gray-800">Успешно отправлено!</h4>
+                    <p class="text-gray-500 text-sm">Ваше обращение принято.</p>
+                    <button onclick="resetMainForm()" class="text-xs font-semibold text-brand-600 underline">Отправить еще</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
